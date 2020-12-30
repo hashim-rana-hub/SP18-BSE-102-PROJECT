@@ -1,0 +1,34 @@
+extends ../layout 
+
+block content 
+    .row 
+        .col-sm-8
+             h1(class="Book-heading") List Of Books 
+                
+        .col-sm-4
+                a(href="/itemsRoutes/add", class="btn btn-info float-right add-new") Add New Books
+                a(href="/readerRoutes", class="btn btn-info float-right ") Readers
+
+    table.table
+        thead
+            tr
+                th Book Name
+                th ISBN Number
+                th Author Name 
+                th Audition
+                th Action
+            
+        tbody
+            each item in items 
+                tr
+                    td=item.b_name
+                    td=item.isbn
+                    td=item.a_name
+                    td=item.audi
+                    td 
+                        a(href="/itemsRoutes/delete/"+item._id, class="btn btn-danger btn-sm") Delete
+                        a(href="/itemsRoutes/edit/"+item._id, class="btn btn-warning btn-sm btn-edit") Edit
+                   
+                
+  
+    

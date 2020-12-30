@@ -1,0 +1,19 @@
+extends layout
+
+block content 
+    h1(class="Book-heading") Add New Reader
+    form(action="/readerRoutes/dbAdd", method="post") 
+        .form-group 
+            label(for="r_name") Reader Name
+            input(type="text", class="form-control" name="r_name") 
+        .form-group 
+            label(for="cnic") Reader CNIC
+            input(type="text", class="form-control" name="cnic") 
+        .form-group 
+            label(for="email") Reader Email
+            input(type="text", class="form-control" name="email") 
+        .form-group 
+            label(for="nmbr") Phone Number
+            input(type="text", class="form-control" name="nmbr") 
+        
+        input(type="submit", class="btn btn-info btn-submit") 

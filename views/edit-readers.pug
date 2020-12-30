@@ -1,0 +1,20 @@
+extends layout
+
+block content 
+    h1(class="add_Edit-heading") Edit Reader Data
+    form(action="/readerRoutes/update/"+list._id, method="post") 
+        .form-group 
+            label(for="r_name") Reader Name
+            input(type="text", class="form-control", name="r_name", value=list.r_name) 
+        .form-group 
+            label(for="cnic") Reader CNIC
+            input(type="text", class="form-control", name="cnic", value=list.cnic) 
+        .form-group 
+            label(for="email") Reader Email
+            input(type="text", class="form-control", name="email", value=list.email) 
+        .form-group 
+            label(for="nmbr") Reader Contact
+            input(type="text", class="form-control", name="nmbr", value=list.nmbr) 
+        
+        input(type="submit", class="btn btn-success btn-submit"  )  
+

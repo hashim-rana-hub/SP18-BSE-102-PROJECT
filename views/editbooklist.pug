@@ -1,0 +1,19 @@
+extends layout
+
+block content 
+    h1(class="Book-heading") Edit Books Information
+    form(action="/itemsRoutes/update/"+item._id, method="post") 
+        .form-group 
+            label(for="b_name") Book Name
+            input(type="text", class="form-control", name="name", value=item.b_name) 
+        .form-group 
+            label(for="isbn") ISBN Number
+            input(type="text", class="form-control", name="cid", value=item.isbn) 
+        .form-group 
+            label(for="a_name") Author Name
+            input(type="text", class="form-control", name="cdur", value=item.a_name) 
+        .form-group 
+            label(for="audi") Audition
+            input(type="text", class="form-control", name="cfee", value=item.audi) 
+        
+        input(type="submit", class="btn btn-info btn-submit") 

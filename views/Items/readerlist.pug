@@ -1,0 +1,34 @@
+extends ../layout 
+
+block content 
+    .row 
+        .col-sm-8
+             h1(class="Book-heading") List Of Readers 
+                
+        .col-sm-4
+                a(href="/readerRoutes/add", class="btn btn-info float-right add-new") Add New Reader
+                a(href="/readerRoutes", class="btn btn-info float-right ") Readers
+
+    table.table
+        thead
+            tr
+                th  Name
+                th  CNIC
+                th  Email 
+                th  Contact
+                th  Action
+            
+        tbody
+            each list in lists 
+                tr
+                    td=list.r_name
+                    td=list.cnic
+                    td=list.email
+                    td=list.nmbr
+                    td 
+                        a(href="/readerRoutes/delete/"+list._id, class="btn btn-danger btn-sm") Delete
+                        a(href="/ReaderRoutes/edit/"+list._id, class="btn btn-warning btn-sm btn-edit") Edit
+                   
+                
+  
+    

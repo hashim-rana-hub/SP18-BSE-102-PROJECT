@@ -1,0 +1,25 @@
+extends ../layout 
+
+block content 
+    .row 
+        .col-sm-8
+             h1(class="Book-heading") List Of Books 
+
+    table.table
+        thead
+            tr
+                th Book Name
+                th ISBN Number
+                th Author Name 
+                th Audition
+            
+        tbody
+            each item in items 
+                tr
+                    td=item.b_name
+                    td=item.isbn
+                    td=item.a_name
+                    td=item.audi
+                   
+  
+    

@@ -1,0 +1,19 @@
+extends layout
+
+block content 
+    h1(class="Book-heading") Add New Books
+    form(action="/itemsRoutes/add", method="post") 
+        .form-group 
+            label(for="b_name") Book Name
+            input(type="text", class="form-control" name="b_name") 
+        .form-group 
+            label(for="isbn") ISBN Number
+            input(type="text", class="form-control" name="isbn") 
+        .form-group 
+            label(for="a_name") Author Name
+            input(type="text", class="form-control" name="a_name") 
+        .form-group 
+            label(for="audi") Audition
+            input(type="text", class="form-control" name="audi") 
+        
+        input(type="submit", class="btn btn-info btn-submit") 

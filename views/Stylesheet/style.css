@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0%;
+  }
+  .navbar-dark {
+      margin-top: 50px;
+     margin-left: 50px;
+     margin-right: 50px;
+  }
+  .add-new {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+  }
+  .add-new:hover {
+      background-color: green;
+  }
+  .btn-sm:hover {
+      background-color: green;
+      color: white;
+  }
+  .btn-edit {
+      margin-left: 10px;
+  }
+  .Book-heading {
+    margin-top: 50px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-left: 48px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .table {
+      margin-left: 50px;
+  }
+  .form-group  {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+  .btn-submit {
+      margin-left: 50px;
+      margin-top: 20px;
+  }
